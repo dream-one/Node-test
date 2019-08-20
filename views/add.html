@@ -16,7 +16,7 @@
   <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+ 
 
   <!-- Custom styles for this template -->
   <link href="/public/dashboard.css" rel="stylesheet">
@@ -93,17 +93,18 @@
               <form action="/add" method="POST">
                 <div class="form-group">
                   <label for="exampleInputEmail1">姓名</label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="张俊">
+                  <input type="text" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')" required="required" name="name" class="form-control" id="exampleInputEmail1" placeholder="张俊">
                 </div>
                 <label for="exampleInputEmail1">班级</label>
-                <select class="form-control">
+                <select class="form-control" name="class">
                   <option>八（一）</option>
-                  <option>八（三）</option>
                   <option>八（二）</option>
+                  <option>八（三）</option>
+                  <option>八（四）</option>
                 </select>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">总分</label>
-                  <input type="number" class="form-control" id="exampleInputEmail1" min="0">
+                  <label for="exampleInputEmail1" >总分</label>
+                  <input type="number" required="required" name="fraction" class="form-control" id="exampleInputEmail1" min="0">
                 </div>
                 <button type="submit" class="btn btn-primary">添加</button>
               </form>

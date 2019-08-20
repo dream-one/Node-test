@@ -1,18 +1,1 @@
-{
-	"students":[
-      {"id" :  1 , 
-     "name" : "李四",
-      "class": "八（4）",
-      "fraction":160
-  },
-     {"id" : 2 , 
-     "name":"张三",
-      "class": "八（4）",
-       "fraction":320
-   },
- {    "id" : 3 , 
-       "name": "刘五",
-       "class" : "八（4）",
-        "fraction":450
-  }]
-}
+{"students":[{"name":"大的","class":"八（一）","fraction":"213","id":1}]}
